@@ -1,0 +1,299 @@
+@font-face{
+	font-family:Psilograph-Black;
+	src:url("fuentes/Psilograph-ExtraBold.tff");
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+	height:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+    color:violet;
+	background-color:black;
+}
+
+header {
+	width: 100%;
+    height: auto; 
+    background-color: pink;
+    color: black;
+    text-align: center;
+	background-image:url("img/foooterr.png");
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color:#7a0a02;
+}
+
+nav a {
+    color: black;
+    padding:1%;
+    text-decoration: none;
+	font-family:Psilograph-Black;
+	
+}
+
+nav a:hover {
+    background-color: purple;
+}
+
+  
+
+main {
+    background-color: #f8f8f8;
+    padding: 40px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#premios {
+    text-align: center;
+    width: 100%;
+}
+
+#premios h2 {
+    font-size: 3rem;
+    color: #1d1d1d;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+.premiouno {
+    display: flex;
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+}
+
+.premiodos {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.premiodos:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    background-color: #f5f5f5;
+}
+
+/
+.premioicon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.premioicon img {
+    width: 40px;
+    height: auto;
+}
+
+
+.premiodos h3 {
+    font-size: 1.6rem;
+    color: #2d2d2d;
+    font-family: 'Roboto', sans-serif;
+    margin: 15px 0;
+    font-weight: 500;
+}
+
+.premiodos p {
+    font-size: 1rem;
+    color: #757575;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+    #premios h2 {
+        font-size: 2rem;
+    }
+
+    .premiouno {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .premiodos {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+}
+
+.logo {
+    width: 15%;
+    border-bottom-left-radius: 20%;
+}
+.logo img {
+    width: 80%;         
+    height: auto; 
+}	
+
+.padre {
+    display: flex;          
+    flex-direction: column;
+    width: 100%;  
+    height:auto;	
+    margin: 0 auto;       
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+	background-image:url("img/foooterr2.png");
+}
+
+.footerr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 90px; 
+    margin-bottom: 10px;
+}
+
+.footerrrr p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.footericons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.footericons img {
+    width: 25px; 
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+
+.footericons a:hover img {
+    transform: scale(1.1);
+}
+
+/* Asegura que el contenedor del slider ocupe toda la pantalla */
+#wowslider-container1 {
+    width: 100vw; /* Ancho de la pantalla completa */
+    height: 100vh; /* Altura de la pantalla completa */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ajusta las imágenes del slider para que llenen el espacio sin distorsionarse */
+.ws_images ul li img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* Recorta la imagen para llenar el espacio */
+}
+
+#biografia {
+    text-align: center;
+    width: 100%;
+}
+
+#biografia h2 {
+    font-size: 50px;
+    color: #1d1d1d;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+.biografia-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 17px;
+    color: #333;
+}
+
+.bio-img {
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+}
+#albums {
+    text-align: center;
+    padding: 40px 10%;
+}
+
+#albums h2 {
+    font-size: 2.5rem;
+    color:#700f18;
+    margin-bottom: 40px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+}
+
+.album-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.album-card {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.album-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    height: auto;
+}
+
+.album-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.album-card p {
+    color: #c1c1c1;
+    font-size: 0.9rem;
+}
+
+.album-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 768px) {
+    .album-card {
+        width: 90%;
+    }
+
